@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Move Food",
+    "description": "Lead developer on the migration of existing code base to React Native.",
+    "id": "12",
+    "longDescription": "Move Food is a platform that connects excess food with distribution centers and food runners who can transport goods between the two. The ideally desired functionality requires access to user's camera and location, which is not (at the time of this writing) possible with a web app. We are working to migrate the code base to react native for this capability and to move forward with luanching and open sourcing the MVP.",
+    "image": "https://source.unsplash.com/random",
+    "link": ""
+  },
+  {
+    "title": "React Internal Asset Library",
+    "description": "Lead developer on internal AT&T React asset library for the Design Technology team.",
+    "id": "13",
+    "longDescription": "After reorgs shuffled around the original React development team, the Design Technology team brought me on to this project to coordinate with the former and remaining developers to aid in the accelerated development of needed components. The team later included new hires whom I was responsible for onboarding and mentoring in the collaboration with the original team.",
+    "image": "https://source.unsplash.com/random",
+    "link": ""
+  },
+  {
+    "title": "React Smart Search Prototype",
+    "description": "Developer on research-informed React prototype with short turn around.",
+    "id": "14",
+    "longDescription": "Part of an effort to improve customer self-troubleshooting, this project involved many internal business units. This project enabled me to extend my knowledge of our teams skill sets by being involved in the earliest user research, while serving as a technical advisor on our data and capabilities. The research and design resulted in solutions for various identified problem sources. I was a developer on one of these solutions, a React prototype of improved search that utilized additional variables we had on our customers.",
+    "image": "https://source.unsplash.com/random",
+    "link": ""
+  },
+  {
+    "title": "Vactionbot",
+    "description": "Lead Developer on NLP chatbot for automating vacation scheduling across company platforms.",
+    "longDescription": "Lead developer on an internal NLP chatbot interfacing with various vacation scheduling tools AT&T acquired over years of mergers. As an early user of the chatbot platform being developed for AT&T's internal chat service, I collaborated with the chat service's developers on chatbot development needs and troubleshooting.",
+    "id": "15",
+    "image": "https://source.unsplash.com/random",
+    "link": ""
+  },
+  {
+    "title": "AIND Project: NLP Translation",
+    "description": "Udacity AI Nanodegree assignment: Developed a deep neural net with Keras and Tensorflow capable of translating a subset of the French language to English.",
+    "id": "16",
+    "image": "https://source.unsplash.com/random",
+    "link": ""
+  },
+  {
+    "title": "AIND Project: CNN Dog Breed Classifier",
+    "description": "Build a Convolutional Neural Network that can recognize dog breeds. Compared multiple models to determine benefits and capabilities.",
+    "id": "17",
+    "image": "https://source.unsplash.com/random",
+    "link": ""
+  },
+  {
+    "title": "AIND Project: Isolation game playing agent",
+    "description": "Developed an adversarial agent utilizing the mini-max algorithm with alpha beta pruning.",
+    "id": "18",
+    "image": "https://source.unsplash.com/random",
+    "link": ""
+  },
+  {
+    "title": "AIND Project: Sudoku solving AI",
+    "description": "Design and implement an algorithm for a successful sudoku-solving AI agent.",
+    "id": "19",
+    "image": "https://source.unsplash.com/random",
+    "link": ""
+  },
+  {
+    "title": "AIND Project: Sign Language(ASL) Recognizer",
+    "description": "Develop a Hidden Markov Model capable of recognizing a subset of words in ASL.",
+    "id": "20",
+    "image": "https://source.unsplash.com/random",
+    "link": ""
+  },
+  {
+    "title": "Natural Disaster report automation",
+    "description": "Developed an automated collective report from a variety of incoming sources to help upper management quickly glean emergency information necessary for decisions on asset allocation.",
+    "longDescription": "",
+    "id": "21",
+    "image": "https://source.unsplash.com/random",
+    "link": ""
+  },
+  {
+    "title": "Leap Motion Interactive Installation",
+    "description": "Developer on design poster installation for the \"Big D\" design conference.",
+    "longDescription": "",
+    "id": "22",
+    "image": "https://source.unsplash.com/random",
+    "link": ""
+  },
+  {
+    "title": "Chat Agent data visualization tool",
+    "description": "Jr Developer responsible for API and interface enhancements and client data requests from internal tool visualizing work of customer service chat agents.",
+    "longDescription": "",
+    "id": "23",
+    "image": "https://source.unsplash.com/random",
+    "link": ""
+  }
+]
