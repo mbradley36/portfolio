@@ -77,7 +77,7 @@
   {
     "title": "Leap Motion Interactive Installation",
     "description": "Developer on design poster installation for the \"Big D\" design conference.",
-    "longDescription": "",
+    "longDescription": "A quick prototype using Leap Motion and Processing to be shown off at the \"Big D\" conference. The user waves their hand above the leap to smear color onto a white screen, revealing one of many motivational design sayings.",
     "id": "22",
     "image": "https://source.unsplash.com/random",
     "link": ""
@@ -85,7 +85,7 @@
   {
     "title": "Chat Agent data visualization tool",
     "description": "Jr Developer responsible for API and interface enhancements and client data requests from internal tool visualizing work of customer service chat agents.",
-    "longDescription": "",
+    "longDescription": "Utilized the DC and D3 JS libraries to develop visualizations. Developed custom interactive pages for individuall business unit needs and established API endpoints for other needs. Additionally created static reports for larger volume requests.",
     "id": "23",
     "image": "https://source.unsplash.com/random",
     "link": ""
