@@ -3,42 +3,42 @@
     "title": "Graph Data Structure visualizer and editor",
     "description": "Pair Programming assignment for Master's level Computer Graphics course at Georgia Tech",
     "id": "6",
-    "image": "https://mir-s3-cdn-cf.behance.net/projects/404/d170de23282595.54cec89d696ec.png",
+    "image": "images/graph.png",
     "link": "https://www.behance.net/gallery/23282595/Graph-Data-StructureEditor"
   },
   {
     "title": "Global Game Jam 2015:ADD",
     "description": "Competitive weekend Unity development challenge with a small team.",
     "id": "7",
-    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/b27ba623276659.56321cc33fd06.png",
+    "image": "images/GGJ2015.png",
     "link": "https://www.behance.net/gallery/23276659/GGJ-2015ADD"
   },
   {
     "title": "Electroterrestrials",
     "description": "Game developer and artist for first mobile release from the Georgia Tech Game Studio.",
     "id": "8",
-    "image": "https://mir-s3-cdn-cf.behance.net/projects/404/19674193.548fc68ba5da5.png",
+    "image": "images/electro.png",
     "link": "https://www.behance.net/gallery/19674193/ElectroTerrestrials"
   },
   {
     "title": "Global Game Jam: KaliedoSoul",
     "description": "Competitive weekend Unity developent challenge with a small team.",
     "id": "9",
-    "image": "https://mir-s3-cdn-cf.behance.net/projects/404/15317031.548964ed20895.png",
+    "image": "images/kaliedosoul.png",
     "link": "https://www.behance.net/gallery/15317031/GGJ-KaleidoSoul"
   },
   {
     "title": "Angry Cuttlefish",
     "description": "Development and art on semester-long Unity project.",
     "id": "10",
-    "image": "https://mir-s3-cdn-cf.behance.net/projects/404/15296425.54895d673f7c5.png",
+    "image": "images/cuttlefish.png",
     "link": "https://www.behance.net/gallery/15296425/Angry-Cuttlefish"
   },
   {
     "title": "Lethe",
     "description": "Lead Developer on semester-long Unity project",
     "id": "11",
-    "image": "https://mir-s3-cdn-cf.behance.net/projects/404/10452833.54800477b6895.png",
+    "image": "images/lethe.png",
     "link": "https://www.behance.net/gallery/10452833/Lethe"
   }
 ]
