@@ -35,36 +35,36 @@
     "title": "AIND Project: NLP Translation",
     "description": "Udacity AI Nanodegree assignment: Developed a deep neural net with Keras and Tensorflow capable of translating a subset of the French language to English.",
     "id": "16",
-    "image": "https://source.unsplash.com/random",
-    "link": ""
+    "image": "../images/git.jpg",
+    "link": "https://github.com/mbradley36/aind2-nlp-capstone"
   },
   {
     "title": "AIND Project: CNN Dog Breed Classifier",
     "description": "Build a Convolutional Neural Network that can recognize dog breeds. Compared multiple models to determine benefits and capabilities.",
     "id": "17",
-    "image": "https://source.unsplash.com/random",
-    "link": ""
+    "image": "../images/git.jpg",
+    "link": "https://github.com/mbradley36/CNNDogBreedClassifier"
   },
   {
     "title": "AIND Project: Isolation game playing agent",
     "description": "Developed an adversarial agent utilizing the mini-max algorithm with alpha beta pruning.",
     "id": "18",
-    "image": "https://source.unsplash.com/random",
-    "link": ""
+    "image": "../images/git.jpg",
+    "link": "https://github.com/mbradley36/AdversarialAgent"
   },
   {
     "title": "AIND Project: Sudoku solving AI",
-    "description": "Design and implement an algorithm for a successful sudoku-solving AI agent.",
+    "description": "Designed and implemented an algorithm for a successful sudoku-solving AI agent.",
     "id": "19",
-    "image": "https://source.unsplash.com/random",
-    "link": ""
+    "image": "../images/git.jpg",
+    "link": "https://github.com/mbradley36/SudokuSolvingAI.git"
   },
   {
     "title": "AIND Project: Sign Language(ASL) Recognizer",
     "description": "Develop a Hidden Markov Model capable of recognizing a subset of words in ASL.",
     "id": "20",
-    "image": "https://source.unsplash.com/random",
-    "link": ""
+    "image": "../images/git.jpg",
+    "link": "https://github.com/mbradley36/HMM_ASLRecognizer.git"
   },
   {
     "title": "Natural Disaster report automation",
