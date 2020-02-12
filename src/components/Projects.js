@@ -4,22 +4,17 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import PortfolioCard from "./PortfolioCard";
+import PortfolioHeader from "./PortfolioHeader";
 
 const useStyles = makeStyles(theme => ({
   heroContent: {
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(12, 0, 6),
-    backgroundImage: "url(https://source.unsplash.com/random)",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPosition: "center"
+    padding: 0,
+    display: "flex"
   },
   sectionContent: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(4, 0, 3)
-  },
-  heroButtons: {
-    marginTop: theme.spacing(4)
   },
   cardGrid: {
     paddingTop: theme.spacing(8),
@@ -37,26 +32,7 @@ export default function Projects() {
   return (
     <React.Fragment>
       <div className={classes.heroContent}>
-        <Container maxWidth="sm">
-          <Typography
-            component="h1"
-            variant="h1"
-            align="center"
-            color="textPrimary"
-            gutterBottom
-          >
-            Miranda Huet
-          </Typography>
-          <Typography
-            component="h4"
-            variant="h4"
-            align="center"
-            color="textPrimary"
-            gutterBottom
-          >
-            Software Engineer
-          </Typography>
-        </Container>
+        <PortfolioHeader />
       </div>
       <div className={classes.sectionContent}>
         <Container maxWidth="sm">
