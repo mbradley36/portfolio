@@ -6,6 +6,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
+import CardModal from "./CardMoal";
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -23,9 +24,18 @@ const useStyles = makeStyles(theme => ({
 
 export default function PortfolioCard({ card }) {
   const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
 
-  return (
-    <Link href={card.link}>
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const renderCard = card => {
+    const cardContent = (
       <Card className={classes.card}>
         <CardActionArea>
           <CardMedia
@@ -41,6 +51,25 @@ export default function PortfolioCard({ card }) {
           </CardContent>
         </CardActionArea>
       </Card>
-    </Link>
-  );
+    );
+
+    //if the card has a valid link, link it
+    //otherwise use a popup modal with further description
+    if (card.link === "") {
+      return (
+        <React.Fragment>
+          <div onClick={handleOpen}>{cardContent}</div>
+          <CardModal
+            open={open}
+            close={handleClose}
+            cardContent={cardContent}
+          />
+        </React.Fragment>
+      );
+    } else {
+      return <Link href={card.link}>{cardContent}</Link>;
+    }
+  };
+
+  return <React.Fragment>{renderCard(card)}</React.Fragment>;
 }
