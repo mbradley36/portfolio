@@ -24,15 +24,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function PortfolioCard({ card }) {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   const renderCard = card => {
     const cardContent = (
@@ -57,14 +48,11 @@ export default function PortfolioCard({ card }) {
     //otherwise use a popup modal with further description
     if (card.link === "") {
       return (
-        <React.Fragment>
-          <div onClick={handleOpen}>{cardContent}</div>
-          <CardModal
-            open={open}
-            close={handleClose}
-            cardContent={cardContent}
-          />
-        </React.Fragment>
+        <CardModal
+          cardContent={cardContent}
+          modalTitle={card.title}
+          modalContent={card.longDescription}
+        />
       );
     } else {
       return <Link href={card.link}>{cardContent}</Link>;
