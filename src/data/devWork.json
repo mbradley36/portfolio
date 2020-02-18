@@ -4,7 +4,7 @@
     "description": "Current project. Lead developer on the migration of existing code base to React Native.",
     "id": "12",
     "longDescription": "Move Food is a platform that connects excess food with distribution centers and food runners who can transport goods between the two. The ideally desired functionality requires access to user's camera and location, which is not (at the time of this writing) possible with a web app. We are working to migrate the code base to react native for this capability and to move forward with luanching and open sourcing the MVP.",
-    "image": "https://source.unsplash.com/random",
+    "image": "images/moveFoodLogo.png",
     "link": ""
   },
   {
@@ -12,7 +12,7 @@
     "description": "Lead developer on internal AT&T React asset library for the Design Technology team.",
     "id": "13",
     "longDescription": "After reorgs shuffled around the original React development team, the Design Technology team brought me on to this project to coordinate with the former and remaining developers to aid in the accelerated development of needed components. The team later included new hires whom I was responsible for onboarding and mentoring in the collaboration with the original team.",
-    "image": "https://source.unsplash.com/random",
+    "image": "images/reactjs.png",
     "link": ""
   },
   {
@@ -28,7 +28,7 @@
     "description": "Lead Developer on NLP chatbot for automating vacation scheduling across company platforms.",
     "longDescription": "Lead developer on an internal NLP chatbot interfacing with various vacation scheduling tools AT&T acquired over years of mergers. As an early user of the chatbot platform being developed for AT&T's internal chat service, I collaborated with the chat service's developers on chatbot development needs and troubleshooting.",
     "id": "15",
-    "image": "https://source.unsplash.com/random",
+    "image": "images/vacationbot.png",
     "link": ""
   },
   {

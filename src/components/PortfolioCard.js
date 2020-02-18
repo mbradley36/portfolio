@@ -10,9 +10,8 @@ import CardModal from "./CardMoal";
 
 const useStyles = makeStyles(theme => ({
   card: {
-    height: "100%",
     display: "flex",
-    flexDirection: "column"
+    height: "100%"
   },
   cardMedia: {
     paddingTop: "56.25%" // 16:9
@@ -55,7 +54,11 @@ export default function PortfolioCard({ card }) {
         />
       );
     } else {
-      return <Link href={card.link}>{cardContent}</Link>;
+      return (
+        <Link to={card.link} style={{ textDecoration: "none" }}>
+          {cardContent}
+        </Link>
+      );
     }
   };
 
