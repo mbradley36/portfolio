@@ -69,7 +69,7 @@
   {
     "title": "Natural Disaster report automation",
     "description": "Developed an automated collective report from a variety of incoming sources to help upper management quickly glean emergency information necessary for decisions on asset allocation.",
-    "longDescription": "",
+    "longDescription": "Parsed incoming data reports to generate an automated summary with visualizations highlighting the most important details.",
     "id": "21",
     "image": "https://source.unsplash.com/random",
     "link": ""
