@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import Stepper from "@material-ui/core/Stepper";
 import Step from "@material-ui/core/Step";
@@ -70,8 +70,9 @@ export default function Resume() {
   const steps = getSteps();
 
   const handleScroll = (inView, index) => {
+    index = index.index;
     if (inView) setActiveStep(index);
-    else if (activeStep == index) setActiveStep(index - 1);
+    else if (activeStep === index) setActiveStep(index - 1);
   };
 
   return (
@@ -82,10 +83,10 @@ export default function Resume() {
             <StepLabel>
               {getStepContent(index).map(position => {
                 return (
-                  <Grid container spacing={3}>
-                    <Grid item xs={6} key={position.title}>
+                  <Grid container spacing={3} key={position.title}>
+                    <Grid item xs={6}>
                       <InView
-                        as="React.Fragment"
+                        as="div"
                         onChange={inView => handleScroll(inView, { index })}
                       >
                         <Typography>{position.title}</Typography>

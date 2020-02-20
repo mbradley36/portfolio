@@ -54,9 +54,9 @@ export default function Projects() {
         </Container>
       </div>
       <Container className={classes.cardGrid} maxWidth="md">
-        <Grid xs container spacing={4} alignItems="stretch">
+        <Grid container spacing={4} alignItems="stretch">
           {devCards.map(card => (
-            <Grid xs item key={card.id} xs={12} sm={6} md={4}>
+            <Grid xs={12} item={true} key={card.id} sm={6} md={4}>
               <PortfolioCard card={card} />
             </Grid>
           ))}
@@ -76,9 +76,9 @@ export default function Projects() {
         </Container>
       </div>
       <Container className={classes.cardGrid} maxWidth="md">
-        <Grid xs container spacing={4}>
+        <Grid container spacing={4}>
           {oldDevCards.map(card => (
-            <Grid xs item key={card.id} xs={12} sm={6} md={4}>
+            <Grid xs={12} item={true} key={card.id} sm={6} md={4}>
               <PortfolioCard card={card} />
             </Grid>
           ))}
@@ -98,9 +98,9 @@ export default function Projects() {
         </Container>
       </div>
       <Container className={classes.cardGrid} maxWidth="md">
-        <Grid xs container spacing={4}>
+        <Grid container spacing={4}>
           {artCards.map(card => (
-            <Grid xs item key={card.id} xs={12} sm={6} md={4}>
+            <Grid xs={12} item={true} key={card.id} sm={6} md={4}>
               <PortfolioCard card={card} />
             </Grid>
           ))}
