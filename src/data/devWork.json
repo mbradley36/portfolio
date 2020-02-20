@@ -20,7 +20,7 @@
     "description": "Developer on research-informed React prototype with short turn around.",
     "id": "14",
     "longDescription": "Part of an effort to improve customer self-troubleshooting, this project involved many internal business units. This project enabled me to extend my knowledge of our teams skill sets by being involved in the earliest user research, while serving as a technical advisor on our data and capabilities. The research and design resulted in solutions for various identified problem sources. I was a developer on one of these solutions, a React prototype of improved search that utilized additional variables we had on our customers.",
-    "image": "https://source.unsplash.com/random",
+    "image": "images/reactjs.png",
     "link": ""
   },
   {
@@ -35,35 +35,35 @@
     "title": "AIND Project: NLP Translation",
     "description": "Udacity AI Nanodegree assignment: Developed a deep neural net with Keras and Tensorflow capable of translating a subset of the French language to English.",
     "id": "16",
-    "image": "images/git.jpg",
+    "image": "images/git.gif",
     "link": "https://github.com/mbradley36/aind2-nlp-capstone"
   },
   {
     "title": "AIND Project: CNN Dog Breed Classifier",
     "description": "Build a Convolutional Neural Network that can recognize dog breeds. Compared multiple models to determine benefits and capabilities.",
     "id": "17",
-    "image": "images/git.jpg",
+    "image": "images/git.gif",
     "link": "https://github.com/mbradley36/CNNDogBreedClassifier"
   },
   {
     "title": "AIND Project: Isolation game playing agent",
     "description": "Developed an adversarial agent utilizing the mini-max algorithm with alpha beta pruning.",
     "id": "18",
-    "image": "images/git.jpg",
+    "image": "images/git.gif",
     "link": "https://github.com/mbradley36/AdversarialAgent"
   },
   {
     "title": "AIND Project: Sudoku solving AI",
     "description": "Designed and implemented an algorithm for a successful sudoku-solving AI agent.",
     "id": "19",
-    "image": "images/git.jpg",
+    "image": "images/git.gif",
     "link": "https://github.com/mbradley36/SudokuSolvingAI.git"
   },
   {
     "title": "AIND Project: Sign Language(ASL) Recognizer",
     "description": "Develop a Hidden Markov Model capable of recognizing a subset of words in ASL.",
     "id": "20",
-    "image": "images/git.jpg",
+    "image": "images/git.gif",
     "link": "https://github.com/mbradley36/HMM_ASLRecognizer.git"
   },
   {
@@ -71,7 +71,7 @@
     "description": "Developed an automated collective report from a variety of incoming sources to help upper management quickly glean emergency information necessary for decisions on asset allocation.",
     "longDescription": "Parsed incoming data reports to generate an automated summary with visualizations highlighting the most important details.",
     "id": "21",
-    "image": "https://source.unsplash.com/random",
+    "image": "images/python.png",
     "link": ""
   },
   {
@@ -79,7 +79,7 @@
     "description": "Developer on design poster installation for the \"Big D\" design conference.",
     "longDescription": "A quick prototype using Leap Motion and Processing to be shown off at the \"Big D\" conference. The user waves their hand above the leap to smear color onto a white screen, revealing one of many motivational design sayings.",
     "id": "22",
-    "image": "https://source.unsplash.com/random",
+    "image": "images/leapMotion.png",
     "link": ""
   },
   {
@@ -87,7 +87,7 @@
     "description": "Responsible for API and interface enhancements for internal data visualization tool of customer support.",
     "longDescription": "Utilized the DC and D3 JS libraries to develop visualizations. Developed custom interactive pages for individuall business unit needs and established API endpoints for other needs. Additionally created static reports for larger volume requests.",
     "id": "23",
-    "image": "https://source.unsplash.com/random",
+    "image": "images/d3.png",
     "link": ""
   }
 ]

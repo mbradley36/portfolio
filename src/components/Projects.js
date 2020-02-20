@@ -14,7 +14,8 @@ const useStyles = makeStyles(theme => ({
   },
   sectionContent: {
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(4, 0, 3)
+    padding: theme.spacing(4, 0, 3),
+    alignContent: "center"
   },
   cardGrid: {
     paddingTop: theme.spacing(8),
@@ -23,8 +24,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: "stretch",
     height: "100%",
     flexDirection: "column",
-    justifyContent: "space-between",
-    margin: 16
+    justifyContent: "space-between"
   }
 }));
 
