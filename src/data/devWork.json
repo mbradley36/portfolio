@@ -84,7 +84,7 @@
   },
   {
     "title": "Chat Agent data visualization tool",
-    "description": "Jr Developer responsible for API and interface enhancements and client data requests from internal tool visualizing work of customer service chat agents.",
+    "description": "Responsible for API and interface enhancements for internal data visualization tool of customer support.",
     "longDescription": "Utilized the DC and D3 JS libraries to develop visualizations. Developed custom interactive pages for individuall business unit needs and established API endpoints for other needs. Additionally created static reports for larger volume requests.",
     "id": "23",
     "image": "https://source.unsplash.com/random",
