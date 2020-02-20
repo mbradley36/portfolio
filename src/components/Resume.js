@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import Stepper from "@material-ui/core/Stepper";
 import Step from "@material-ui/core/Step";
 import StepLabel from "@material-ui/core/StepLabel";
 import Typography from "@material-ui/core/Typography";
-import { ScrollPercentage } from "react-scroll-percentage";
 import Grid from "@material-ui/core/Grid";
+import { InView } from "react-intersection-observer";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -21,7 +21,7 @@ function getSteps() {
   return ["1", "2", "3", "4"];
 }
 
-function getStepTitle(step: number) {
+function getStepContent(step: number) {
   switch (step) {
     case 0:
       return [
@@ -66,53 +66,44 @@ function getStepTitle(step: number) {
 
 export default function Resume() {
   const classes = useStyles();
-  const [activeStep, setActiveStep] = useState(2);
+  const [activeStep, setActiveStep] = useState(0);
   const steps = getSteps();
 
-  const handleScroll = (percentage, entry) => {
-    console.log(entry, " ", percentage);
-  };
-
-  const handleNext = () => {
-    setActiveStep(prevActiveStep => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep(prevActiveStep => prevActiveStep - 1);
+  const handleScroll = (inView, index) => {
+    if (inView) setActiveStep(index);
+    else if (activeStep == index) setActiveStep(index - 1);
   };
 
   return (
     <div className={classes.root}>
-      <ScrollPercentage
-        as="div"
-        onChange={(percentage, entry) => {
-          handleScroll(percentage, entry);
-        }}
-      >
-        <Stepper activeStep={activeStep} orientation="vertical">
-          {steps.map((label, index) => (
-            <Step key={label} completed={false}>
-              <StepLabel>
-                {getStepTitle(index).map(position => {
-                  return (
-                    <Grid container spacing={3}>
-                      <Grid item xs={6} key={index}>
-                        <Typography variant="h4">{position.title}</Typography>
-                        <Typography variant="h6">{position.company}</Typography>
-                      </Grid>
-                      <Grid item xs={6} key={index}>
-                        <Typography variant="h6">
-                          {position.description}
-                        </Typography>
-                      </Grid>
+      <Stepper activeStep={activeStep} orientation="vertical">
+        {steps.map((label, index) => (
+          <Step key={label} completed={false}>
+            <StepLabel>
+              {getStepContent(index).map(position => {
+                return (
+                  <Grid container spacing={3}>
+                    <Grid item xs={6} key={position.title}>
+                      <InView
+                        as="React.Fragment"
+                        onChange={inView => handleScroll(inView, { index })}
+                      >
+                        <Typography>{position.title}</Typography>
+                      </InView>
+                      <Typography variant="h6">{position.company}</Typography>
                     </Grid>
-                  );
-                })}
-              </StepLabel>
-            </Step>
-          ))}
-        </Stepper>
-      </ScrollPercentage>
+                    <Grid item xs={6} key={index}>
+                      <Typography variant="h6">
+                        {position.description}
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                );
+              })}
+            </StepLabel>
+          </Step>
+        ))}
+      </Stepper>
     </div>
   );
 }
