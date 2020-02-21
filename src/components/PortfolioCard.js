@@ -55,7 +55,7 @@ export default function PortfolioCard({ card }) {
       );
     } else {
       return (
-        <Link to={card.link} style={{ textDecoration: "none" }}>
+        <Link href={card.link} style={{ textDecoration: "none" }}>
           {cardContent}
         </Link>
       );
