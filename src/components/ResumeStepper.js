@@ -1,11 +1,17 @@
 import React, { useState } from "react";
-import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
+import {
+  makeStyles,
+  Theme,
+  createStyles,
+  withStyles
+} from "@material-ui/core/styles";
 import Stepper from "@material-ui/core/Stepper";
 import Step from "@material-ui/core/Step";
 import StepLabel from "@material-ui/core/StepLabel";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import { InView } from "react-intersection-observer";
+import StepConnector from "@material-ui/core/StepConnector";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -16,6 +22,12 @@ const useStyles = makeStyles((theme: Theme) =>
     }
   })
 );
+
+const stepperStyles = withStyles({
+  line: {
+    borderTopWidth: 0
+  }
+})(StepConnector);
 
 function getSteps() {
   return ["1", "2", "3", "4"];
@@ -80,7 +92,7 @@ export default function ResumeStepper() {
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((label, index) => (
           <Step key={label} completed={false}>
-            <StepLabel>
+            <StepLabel icon="">
               {getStepContent(index).map(position => {
                 return (
                   <Grid container spacing={3} key={position.title}>

@@ -12,9 +12,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function downloadResume() {
-  fetch(
-    "https://mhuetportfolio.s3.us-east-2.amazonaws.com/MirandaHuetResume2020_singlePage.pdf"
-  ).then(response => {
+  fetch("./MirandaHuetResume2020_singlePage.pdf").then(response => {
     response.blob().then(blob => {
       let url = window.URL.createObjectURL(blob);
       let a = document.createElement("a");
