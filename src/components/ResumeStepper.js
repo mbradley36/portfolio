@@ -1,17 +1,9 @@
 import React, { useState } from "react";
-import {
-  makeStyles,
-  Theme,
-  createStyles,
-  withStyles
-} from "@material-ui/core/styles";
-import Stepper from "@material-ui/core/Stepper";
-import Step from "@material-ui/core/Step";
-import StepLabel from "@material-ui/core/StepLabel";
+import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import { InView } from "react-intersection-observer";
-import StepConnector from "@material-ui/core/StepConnector";
+import grey from "@material-ui/core/colors/grey";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -19,15 +11,15 @@ const useStyles = makeStyles((theme: Theme) =>
       width: "100%",
       backgroundColor: theme.palette.background.paper,
       padding: theme.spacing(4, 0, 3)
+    },
+    active: {
+      color: grey[900]
+    },
+    inactive: {
+      color: grey[500]
     }
   })
 );
-
-const stepperStyles = withStyles({
-  line: {
-    borderTopWidth: 0
-  }
-})(StepConnector);
 
 function getSteps() {
   return ["1", "2", "3", "4"];
@@ -81,7 +73,7 @@ export default function ResumeStepper() {
   const [activeStep, setActiveStep] = useState(0);
   const steps = getSteps();
 
-  const handleScroll = (inView, index) => {
+  const handleScroll = (inView, entry, index) => {
     index = index.index;
     if (inView) setActiveStep(index);
     else if (activeStep === index) setActiveStep(index - 1);
@@ -89,34 +81,35 @@ export default function ResumeStepper() {
 
   return (
     <div className={classes.root}>
-      <Stepper activeStep={activeStep} orientation="vertical">
-        {steps.map((label, index) => (
-          <Step key={label} completed={false}>
-            <StepLabel icon="">
-              {getStepContent(index).map(position => {
-                return (
-                  <Grid container spacing={3} key={position.title}>
-                    <Grid item xs={6}>
-                      <InView
-                        as="div"
-                        onChange={inView => handleScroll(inView, { index })}
-                      >
-                        <Typography>{position.title}</Typography>
-                      </InView>
-                      <Typography variant="h6">{position.company}</Typography>
-                    </Grid>
-                    <Grid item xs={6} key={index}>
-                      <Typography variant="h6">
-                        {position.description}
-                      </Typography>
-                    </Grid>
-                  </Grid>
-                );
-              })}
-            </StepLabel>
-          </Step>
-        ))}
-      </Stepper>
+      {steps.map((label, index) =>
+        getStepContent(index).map(position => {
+          return (
+            <Grid
+              container
+              spacing={3}
+              key={position.title}
+              className={
+                index === activeStep ? classes.active : classes.inactive
+              }
+            >
+              <Grid item xs={6}>
+                <Typography>{position.title}</Typography>
+                <Typography variant="h6">{position.company}</Typography>
+              </Grid>
+              <Grid item xs={6} key={index}>
+                <InView
+                  as="div"
+                  onChange={(inView, entry) =>
+                    handleScroll(inView, entry, { index })
+                  }
+                >
+                  <Typography variant="h6">{position.description}</Typography>
+                </InView>
+              </Grid>
+            </Grid>
+          );
+        })
+      )}
     </div>
   );
 }
