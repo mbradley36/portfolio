@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function downloadResume() {
-  fetch("./MirandaHuetResume2020_singlePage.pdf").then(response => {
+  fetch("images/MirandaHuetResume2020_singlePage.pdf").then(response => {
     response.blob().then(blob => {
       let url = window.URL.createObjectURL(blob);
       let a = document.createElement("a");
