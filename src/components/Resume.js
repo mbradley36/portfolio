@@ -36,6 +36,9 @@ const useStyles = makeStyles((theme: Theme) =>
       display: "inline-block",
       marginBottom: "0.5%",
       marginLeft: "0.5%"
+    },
+    company: {
+      color: "#882400"
     }
   })
 );
@@ -44,6 +47,10 @@ export default function Resume() {
   const classes = useStyles();
   const dot = () => {
     return <span style={{ color: "#ff7f50" }}>•</span>;
+  };
+
+  const renderCompany = name => {
+    return <span className={classes.company}> {name}</span>;
   };
 
   return (
@@ -74,7 +81,7 @@ export default function Resume() {
           </Grid>
         </Grid>
 
-        <ResumeStepper />
+        <ResumeStepper renderCompany={renderCompany()} />
       </Container>
 
       <Container maxWidth="md">
@@ -89,10 +96,13 @@ export default function Resume() {
           <Grid item xs={12}>
             <Typography>
               <i>
-                <b>Game Development TA</b> for Georgia Institute of Technology
-                (2014), <b>3D Freelance Artist</b> for Interlaced Productions
-                (2011-2012), and <b>Maya Tutor</b> for Savannah College of Art
-                and Design (2008-2010).
+                <b>Game Development TA</b> for
+                {renderCompany("Georgia Institute of Technology")}(2014),
+                <b>3D Freelance Artist</b> for
+                {renderCompany("Interlaced Productions")}
+                (2011-2012), and <b>Maya Tutor</b> for
+                {renderCompany("Savannah College of Art and Design")}{" "}
+                (2008-2010).
               </i>
             </Typography>
           </Grid>

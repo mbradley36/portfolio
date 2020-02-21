@@ -10,7 +10,6 @@ const useStyles = makeStyles(theme => ({
     backgroundSize: "cover",
     backgroundPosition: "center",
     padding: theme.spacing(100, 0, 0),
-    filter: "blur(3px) brightness(90%)",
     width: "100%"
   },
   headerContent: {
@@ -19,6 +18,9 @@ const useStyles = makeStyles(theme => ({
     left: "50%",
     position: "absolute",
     transform: "translate(-50%, -50%)"
+  },
+  headerContainer: {
+    overflow: "hidden"
   }
 }));
 

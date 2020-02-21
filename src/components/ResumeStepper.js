@@ -17,6 +17,9 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     inactive: {
       color: grey[500]
+    },
+    company: {
+      color: "#882400"
     }
   })
 );
@@ -73,10 +76,12 @@ export default function ResumeStepper() {
   const [activeStep, setActiveStep] = useState(0);
   const steps = getSteps();
 
-  const handleScroll = (inView, entry, index) => {
-    index = index.index;
+  const handleScroll = (inView, entry, { index }) => {
     if (inView) setActiveStep(index);
     else if (activeStep === index) setActiveStep(index - 1);
+  };
+  const renderCompany = name => {
+    return <span className={classes.company}> {name}</span>;
   };
 
   return (
@@ -94,7 +99,9 @@ export default function ResumeStepper() {
             >
               <Grid item xs={6}>
                 <Typography>{position.title}</Typography>
-                <Typography variant="h6">{position.company}</Typography>
+                <Typography variant="h6">
+                  {renderCompany(position.company)}
+                </Typography>
               </Grid>
               <Grid item xs={6} key={index}>
                 <InView
