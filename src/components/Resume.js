@@ -51,12 +51,15 @@ export default function Resume() {
       <Container maxWidth="lg">
         <Grid container spacing={1} className={classes.header}>
           <Grid item xs={6}>
-            <Typography variant="h2" style={{ textAlign: "right" }}>
+            <Typography variant="h3" style={{ textAlign: "right" }}>
               Miranda Huet
             </Typography>
           </Grid>
           <Grid item xs={6}>
-            <Typography style={{ display: "flex" }}>
+            <Typography
+              variant="h6"
+              style={{ display: "flex", fontWeight: "400" }}
+            >
               <span style={{ color: "#ff7f50" }}>//</span>
               Product-minded software engineer, woodworker and adventurer.
             </Typography>

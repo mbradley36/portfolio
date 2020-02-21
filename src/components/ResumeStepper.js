@@ -99,6 +99,7 @@ export default function ResumeStepper() {
               <Grid item xs={6} key={index}>
                 <InView
                   as="div"
+                  threshold="1"
                   onChange={(inView, entry) =>
                     handleScroll(inView, entry, { index })
                   }
