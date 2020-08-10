@@ -11,35 +11,35 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       width: "100%",
       backgroundColor: theme.palette.background.paper,
-      padding: theme.spacing(8, 0, 3)
+      padding: theme.spacing(8, 0, 3),
     },
     header: {
       textAlign: "center",
       alignItems: "flex-end",
-      padding: theme.spacing(4, 0, 0)
+      padding: theme.spacing(4, 0, 0),
     },
     divider: {
       backgroundColor: "#ff7f50",
       marginLeft: "10%",
-      marginRight: "10%"
+      marginRight: "10%",
     },
     miniDividerL: {
       backgroundColor: "#ff7f50",
       width: "2.5%",
       display: "inline-block",
       marginBottom: "0.5%",
-      marginRight: "0.5%"
+      marginRight: "0.5%",
     },
     miniDividerR: {
       backgroundColor: "#ff7f50",
       width: "2.5%",
       display: "inline-block",
       marginBottom: "0.5%",
-      marginLeft: "0.5%"
+      marginLeft: "0.5%",
     },
     company: {
-      color: "#882400"
-    }
+      color: "#882400",
+    },
   })
 );
 
@@ -49,7 +49,7 @@ export default function Resume() {
     return <span style={{ color: "#ff7f50" }}>•</span>;
   };
 
-  const renderCompany = name => {
+  const renderCompany = (name) => {
     return <span className={classes.company}> {name}</span>;
   };
 
@@ -98,7 +98,7 @@ export default function Resume() {
               <i>
                 <b>Game Development TA</b> for
                 {renderCompany("Georgia Institute of Technology")}(2014),
-                <b>3D Freelance Artist</b> for
+                <b> 3D Freelance Artist</b> for
                 {renderCompany("Interlaced Productions")}
                 (2011-2012), and <b>Maya Tutor</b> for
                 {renderCompany("Savannah College of Art and Design")}{" "}

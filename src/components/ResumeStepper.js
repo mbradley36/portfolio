@@ -10,17 +10,17 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       width: "100%",
       backgroundColor: theme.palette.background.paper,
-      padding: theme.spacing(4, 0, 3)
+      padding: theme.spacing(4, 0, 3),
     },
     active: {
-      color: grey[900]
+      color: grey[900],
     },
     inactive: {
-      color: grey[500]
+      color: grey[500],
     },
     company: {
-      color: "#882400"
-    }
+      color: "#882400",
+    },
   })
 );
 
@@ -33,38 +33,47 @@ function getStepContent(step: number) {
     case 0:
       return [
         {
+          title: "Lead Software Engineer",
+          company: "QD Solutions",
+          description:
+            "Responsible for developing and maintaining multiple applications, including an existing Django-based patient screener tool with dashboards for different user types. Designed and developed MERN storefront for clinics to order supplies needed for studies. Developed React-based static informational sites on studies. Collaborated with vendor Cloudnexa to deploy and manage applications on AWS.",
+        },
+      ];
+    case 1:
+      return [
+        {
           title: "Senior Software Engineer",
           company: "AT&T Design Technology",
           description:
-            "Past Positions as Software Engineer and Associate Applications Developer. Lead developer on internal vacation-scheduling chatbot. Responsible for NLP, database design and development, experience flow, testing, requirements definition, maintenance and handoff. Helped establish chatbot platform needs and collaborated with platform developers on issues. Resulting product provided 3M/yr savings in returned work time. Develop prototypes and support the research process through technical evaluations and data Investigations. Promote customer-centric mentality across various projects in partnership with User Experience Designers and User Researchers. Mentor developer new hires, volunteer mentor with Girls Who Code. Panelist in company-wide event discussing the intersection of design and AI. Drafted eight patents, currently in various stages of patent submission system. Spearheaded volunteer team for Keep Austin Fed."
-        }
+            "Past Positions as Software Engineer and Associate Applications Developer. Lead developer on internal vacation-scheduling chatbot. Responsible for NLP, database design and development, experience flow, testing, requirements definition, maintenance and handoff. Helped establish chatbot platform needs and collaborated with platform developers on issues. Resulting product provided 3M/yr savings in returned work time. Develop prototypes and support the research process through technical evaluations and data Investigations. Promote customer-centric mentality across various projects in partnership with User Experience Designers and User Researchers. Mentor developer new hires, volunteer mentor with Girls Who Code. Panelist in company-wide event discussing the intersection of design and AI. Drafted eight patents, currently in various stages of patent submission system. Spearheaded volunteer team for Keep Austin Fed.",
+        },
       ];
-    case 1:
+    case 2:
       return [
         {
           title: "Game Developer",
           company: "SideFX Software",
           description:
-            "Conceptualized, coordinated and programmed demo highlighting Houdini core features within Unreal Game Engine. Acted as company representative at various convention demos."
-        }
+            "Conceptualized, coordinated and programmed demo highlighting Houdini core features within Unreal Game Engine. Acted as company representative at various convention demos.",
+        },
       ];
-    case 2:
+    case 3:
       return [
         {
           title: "Quality Assurance Intern",
           company: "Adult Swim Games, Turner",
           description:
-            "Spearheaded testing of unreleased games in development, including regression testing, bug report logging, and collaborating with developers to effectively identify bug sources."
-        }
+            "Spearheaded testing of unreleased games in development, including regression testing, bug report logging, and collaborating with developers to effectively identify bug sources.",
+        },
       ];
-    case 3:
+    case 4:
       return [
         {
           title: "Generalist",
           company: "Georgia Tech Game Studio",
           description:
-            "Conceptualized, coordinated and programmed prototypes. Stepped in on artistic tasks as needed and served as an intermediary between art and development needs. Developer on the team’s first IOS and Android release."
-        }
+            "Conceptualized, coordinated and programmed prototypes. Stepped in on artistic tasks as needed and served as an intermediary between art and development needs. Developer on the team’s first IOS and Android release.",
+        },
       ];
     default:
       return "";
@@ -80,14 +89,14 @@ export default function ResumeStepper() {
     if (inView) setActiveStep(index);
     else if (activeStep === index) setActiveStep(index - 1);
   };
-  const renderCompany = name => {
+  const renderCompany = (name) => {
     return <span className={classes.company}> {name}</span>;
   };
 
   return (
     <div className={classes.root}>
       {steps.map((label, index) =>
-        getStepContent(index).map(position => {
+        getStepContent(index).map((position) => {
           return (
             <Grid
               container
