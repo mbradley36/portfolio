@@ -14,17 +14,8 @@ const useStyles = makeStyles((theme) => ({
   },
   sectionContent: {
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(5, 0, 0),
+    padding: theme.spacing(8, 0, 1),
     alignContent: "center",
-  },
-  cardGrid: {
-    paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(8),
-    display: "flex",
-    alignItems: "stretch",
-    height: "100%",
-    flexDirection: "column",
-    justifyContent: "space-between",
   },
 }));
 
@@ -58,7 +49,7 @@ export default function Projects() {
         <Grid container spacing={4} alignItems="stretch">
           {devCards.map((card) => (
             <Grid xs={12} item={true} key={card.id} sm={6} md={4}>
-              <PortfolioCard card={card} />
+              <PortfolioCard card={card} key={card.id} />
             </Grid>
           ))}
         </Grid>

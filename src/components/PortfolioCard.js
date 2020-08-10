@@ -7,26 +7,29 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import CardModal from "./CardMoal";
+import Grid from "@material-ui/core/Grid";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   card: {
     display: "flex",
-    height: "100%"
+    flexDirection: "column",
+    justifyContent: "space-between",
+    borderRadius: "8px",
   },
   cardMedia: {
-    paddingTop: "56.25%" // 16:9
+    paddingTop: "56.25%", // 16:9
   },
   cardContent: {
-    flexGrow: 1
-  }
+    flexGrow: 1,
+  },
 }));
 
 export default function PortfolioCard({ card }) {
   const classes = useStyles();
 
-  const renderCard = card => {
+  const renderCard = (card) => {
     const cardContent = (
-      <Card className={classes.card}>
+      <Grid item component={Card} className={classes.card} xs>
         <CardActionArea>
           <CardMedia
             className={classes.cardMedia}
@@ -34,13 +37,18 @@ export default function PortfolioCard({ card }) {
             title={card.title}
           />
           <CardContent className={classes.cardContent}>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="h2"
+              id="card-title"
+            >
               {card.title}
             </Typography>
             <Typography>{card.description}</Typography>
           </CardContent>
         </CardActionArea>
-      </Card>
+      </Grid>
     );
 
     //if the card has a valid link, link it
@@ -62,5 +70,5 @@ export default function PortfolioCard({ card }) {
     }
   };
 
-  return <React.Fragment>{renderCard(card)}</React.Fragment>;
+  return renderCard(card);
 }

@@ -21,3 +21,9 @@
 #h2-responsive {
   font-size: 5vw;
 }
+
+@media only screen and (max-width: 600px) {
+  #card-title {
+    text-align: center;
+  }
+}
