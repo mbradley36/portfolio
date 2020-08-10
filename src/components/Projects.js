@@ -6,26 +6,26 @@ import Container from "@material-ui/core/Container";
 import PortfolioCard from "./PortfolioCard";
 import PortfolioHeader from "./PortfolioHeader";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   heroContent: {
     backgroundColor: theme.palette.background.paper,
     padding: 0,
-    display: "flex"
+    display: "flex",
   },
   sectionContent: {
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(4, 0, 3),
-    alignContent: "center"
+    padding: theme.spacing(5, 0, 0),
+    alignContent: "center",
   },
   cardGrid: {
-    paddingTop: theme.spacing(8),
+    paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(8),
     display: "flex",
     alignItems: "stretch",
     height: "100%",
     flexDirection: "column",
-    justifyContent: "space-between"
-  }
+    justifyContent: "space-between",
+  },
 }));
 
 //import json files of portfolio pieces
@@ -48,6 +48,7 @@ export default function Projects() {
             align="center"
             color="textPrimary"
             gutterBottom
+            id="h2-responsive"
           >
             Development
           </Typography>
@@ -55,7 +56,7 @@ export default function Projects() {
       </div>
       <Container className={classes.cardGrid} maxWidth="md">
         <Grid container spacing={4} alignItems="stretch">
-          {devCards.map(card => (
+          {devCards.map((card) => (
             <Grid xs={12} item={true} key={card.id} sm={6} md={4}>
               <PortfolioCard card={card} />
             </Grid>
@@ -70,6 +71,7 @@ export default function Projects() {
             align="center"
             color="textPrimary"
             gutterBottom
+            id="h2-responsive"
           >
             Older Development Work
           </Typography>
@@ -77,7 +79,7 @@ export default function Projects() {
       </div>
       <Container className={classes.cardGrid} maxWidth="md">
         <Grid container spacing={4}>
-          {oldDevCards.map(card => (
+          {oldDevCards.map((card) => (
             <Grid xs={12} item={true} key={card.id} sm={6} md={4}>
               <PortfolioCard card={card} />
             </Grid>
@@ -92,6 +94,7 @@ export default function Projects() {
             align="center"
             color="textPrimary"
             gutterBottom
+            id="h2-responsive"
           >
             Animation & Art
           </Typography>
@@ -99,7 +102,7 @@ export default function Projects() {
       </div>
       <Container className={classes.cardGrid} maxWidth="md">
         <Grid container spacing={4}>
-          {artCards.map(card => (
+          {artCards.map((card) => (
             <Grid xs={12} item={true} key={card.id} sm={6} md={4}>
               <PortfolioCard card={card} />
             </Grid>
