@@ -3,34 +3,18 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
-const useStyles = makeStyles(theme => ({
-  headerBackground: {
-    backgroundImage: "url(images/headerImage.gif)",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    padding: theme.spacing(100, 0, 0),
-    width: "100%"
-  },
-  headerContent: {
-    width: "100%",
-    top: "50%",
-    left: "50%",
-    position: "absolute",
-    transform: "translate(-50%, -50%)"
-  },
+const useStyles = makeStyles((theme) => ({
   headerContainer: {
-    overflow: "hidden"
-  }
+    overflow: "hidden",
+  },
 }));
 
 export default function PortfolioHeader() {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
-      <div className={classes.headerBackground} />
-      <div className={classes.headerContent}>
+    <div id="header-image">
+      <div id="header-content">
         <Container maxWidth="sm">
           <Typography
             component="h1"
@@ -38,6 +22,7 @@ export default function PortfolioHeader() {
             align="center"
             color="textPrimary"
             gutterBottom
+            id="header-text"
           >
             Miranda Huet
           </Typography>
@@ -47,11 +32,12 @@ export default function PortfolioHeader() {
             align="center"
             color="textPrimary"
             gutterBottom
+            id="header-sub-text"
           >
             Software Engineer
           </Typography>
         </Container>
       </div>
-    </React.Fragment>
+    </div>
   );
 }

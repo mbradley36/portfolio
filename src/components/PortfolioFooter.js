@@ -4,16 +4,16 @@ import IconButton from "@material-ui/core/IconButton";
 import SvgIcon from "@material-ui/core/SvgIcon";
 import Link from "@material-ui/core/Link";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   footer: {
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6)
-  }
+    padding: theme.spacing(6),
+  },
 }));
 
 function downloadResume() {
-  fetch("images/MirandaHuetResume2020_singlePage.pdf").then(response => {
-    response.blob().then(blob => {
+  fetch("images/MirandaHuetResume.pdf").then((response) => {
+    response.blob().then((blob) => {
       let url = window.URL.createObjectURL(blob);
       let a = document.createElement("a");
       a.href = url;

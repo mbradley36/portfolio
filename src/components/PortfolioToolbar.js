@@ -5,13 +5,13 @@ import AppBar from "@material-ui/core/AppBar";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link, useHistory } from "react-router-dom";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   toolBar: {
-    backgroundColor: "#00A896"
+    backgroundColor: "#3a7667",
   },
   indicator: {
-    backgroundColor: "#882400"
-  }
+    backgroundColor: "rgb(255, 127, 80)",
+  },
 }));
 
 export default function PortfolioToolbar() {

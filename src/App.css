@@ -1,0 +1,19 @@
+#header-image {
+  background-image: url(./images/headerImage.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 45vw;
+  width: 100%;
+}
+
+#header-text {
+  font-size: 7vw;
+}
+
+#header-sub-text {
+  font-size: 3vw;
+}
+
+#header-content {
+  margin-top: 22vw;
+}
