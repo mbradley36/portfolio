@@ -5,6 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import PortfolioCard from "./PortfolioCard";
 import PortfolioHeader from "./PortfolioHeader";
+import Card from "@material-ui/core/Card";
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
@@ -16,6 +17,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(4, 0, 1),
     alignContent: "center",
+  },
+  card: {
+    margin: "24px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
 }));
 
@@ -45,10 +52,18 @@ export default function Projects() {
           </Typography>
         </Container>
       </div>
-      <Container id="card-grid" maxWidth="md">
-        <Grid container spacing={4} alignItems="stretch">
+      <Container id="card-grid" maxWidth="xl">
+        <Grid container id="card-section">
           {devCards.map((card) => (
-            <Grid xs={12} item={true} key={card.id} sm={6} md={4}>
+            <Grid
+              component={Card}
+              className={classes.card}
+              xs={12}
+              item={true}
+              key={card.id}
+              sm={5}
+              md={3}
+            >
               <PortfolioCard card={card} key={card.id} />
             </Grid>
           ))}
@@ -68,10 +83,18 @@ export default function Projects() {
           </Typography>
         </Container>
       </div>
-      <Container id="card-grid" maxWidth="md">
-        <Grid container spacing={4}>
+      <Container id="card-grid" maxWidth="xl">
+        <Grid container id="card-section">
           {oldDevCards.map((card) => (
-            <Grid xs={12} item={true} key={card.id} sm={6} md={4}>
+            <Grid
+              xs={12}
+              item={true}
+              key={card.id}
+              sm={5}
+              md={3}
+              component={Card}
+              className={classes.card}
+            >
               <PortfolioCard card={card} />
             </Grid>
           ))}
@@ -91,10 +114,18 @@ export default function Projects() {
           </Typography>
         </Container>
       </div>
-      <Container id="card-grid" maxWidth="md">
-        <Grid container spacing={4}>
+      <Container id="card-grid" maxWidth="xl">
+        <Grid container id="card-section">
           {artCards.map((card) => (
-            <Grid xs={12} item={true} key={card.id} sm={6} md={4}>
+            <Grid
+              xs={12}
+              item={true}
+              key={card.id}
+              sm={5}
+              md={3}
+              component={Card}
+              className={classes.card}
+            >
               <PortfolioCard card={card} />
             </Grid>
           ))}

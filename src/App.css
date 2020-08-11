@@ -37,6 +37,10 @@
   padding-bottom: 32px;
 }
 
+#card-section {
+  margin-left: 5%;
+}
+
 #resume-comment {
   display: flex;
   font-weight: 400;
@@ -59,6 +63,11 @@
 
 #responsive-modal {
   max-width: 50%;
+}
+
+#card-link {
+  text-decoration: none;
+  color: black;
 }
 
 @media only screen and (max-width: 600px) {
@@ -97,6 +106,10 @@
   #responsive-modal {
     max-width: 70%;
   }
+
+  #card-section {
+    margin-left: 0;
+  }
 }
 
 /* max width for scaling text, etc */
@@ -119,5 +132,9 @@
 
   #responsive-modal {
     max-width: 25%;
+  }
+
+  #card-section {
+    margin-left: 10%;
   }
 }

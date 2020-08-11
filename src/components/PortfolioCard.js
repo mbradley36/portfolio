@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -7,15 +6,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import CardModal from "./CardMoal";
-import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
-  card: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-    borderRadius: "8px",
-  },
   cardMedia: {
     paddingTop: "56.25%", // 16:9
   },
@@ -29,26 +21,19 @@ export default function PortfolioCard({ card }) {
 
   const renderCard = (card) => {
     const cardContent = (
-      <Grid item component={Card} className={classes.card} xs>
-        <CardActionArea>
-          <CardMedia
-            className={classes.cardMedia}
-            image={card.image}
-            title={card.title}
-          />
-          <CardContent className={classes.cardContent}>
-            <Typography
-              gutterBottom
-              variant="h5"
-              component="h2"
-              id="card-title"
-            >
-              {card.title}
-            </Typography>
-            <Typography>{card.description}</Typography>
-          </CardContent>
-        </CardActionArea>
-      </Grid>
+      <CardActionArea>
+        <CardMedia
+          className={classes.cardMedia}
+          image={card.image}
+          title={card.title}
+        />
+        <CardContent className={classes.cardContent}>
+          <Typography gutterBottom variant="h5" component="h2" id="card-title">
+            {card.title}
+          </Typography>
+          <Typography>{card.description}</Typography>
+        </CardContent>
+      </CardActionArea>
     );
 
     //if the card has a valid link, link it
@@ -63,7 +48,7 @@ export default function PortfolioCard({ card }) {
       );
     } else {
       return (
-        <Link href={card.link} style={{ textDecoration: "none" }}>
+        <Link href={card.link} id="card-link">
           {cardContent}
         </Link>
       );
