@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: theme.palette.background.paper,
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
-      maxWidth: "70%",
       outline: "none",
     },
   })
@@ -49,7 +48,7 @@ export default function CardModal({ cardContent, modalTitle, modalContent }) {
         }}
       >
         <Fade in={open}>
-          <div className={classes.paper}>
+          <div className={classes.paper} id="responsive-modal">
             <h2 id="transition-modal-title">{modalTitle}</h2>
             <p id="transition-modal-description">{modalContent}</p>
           </div>

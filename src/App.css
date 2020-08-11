@@ -57,6 +57,10 @@
   text-align: right;
 }
 
+#responsive-modal {
+  max-width: 50%;
+}
+
 @media only screen and (max-width: 600px) {
   #card-title {
     text-align: center;
@@ -89,6 +93,10 @@
   #h2-responsive {
     font-size: 6vw;
   }
+
+  #responsive-modal {
+    max-width: 70%;
+  }
 }
 
 /* max width for scaling text, etc */
@@ -107,5 +115,9 @@
 
   #h2-responsive {
     font-size: 3em;
+  }
+
+  #responsive-modal {
+    max-width: 25%;
   }
 }
