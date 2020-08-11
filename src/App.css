@@ -54,4 +54,8 @@
   #resume-name {
     text-align: center;
   }
+
+  #resume-content {
+    padding-bottom: 32px;
+  }
 }
