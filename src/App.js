@@ -6,7 +6,9 @@ import { BrowserRouter as Router } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <Portfolio />
+      <div id="max-width">
+        <Portfolio />
+      </div>
     </Router>
   );
 }
