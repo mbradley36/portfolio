@@ -115,7 +115,7 @@ export default function ResumeStepper() {
               <Grid item sm={6} xs={12} key={index} id="resume-content">
                 <InView
                   as="div"
-                  threshold="1"
+                  threshold="0.75"
                   onChange={(inView, entry) =>
                     handleScroll(inView, entry, { index })
                   }

@@ -9,15 +9,14 @@ const useStyles = makeStyles((theme: Theme) =>
     modal: {
       display: "flex",
       alignItems: "center",
-      justifyContent: "center"
+      justifyContent: "center",
     },
     paper: {
       backgroundColor: theme.palette.background.paper,
-      border: "2px solid #000",
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
-      maxWidth: "70%"
-    }
+      maxWidth: "70%",
+    },
   })
 );
 
@@ -45,7 +44,7 @@ export default function CardModal({ cardContent, modalTitle, modalContent }) {
         closeAfterTransition
         BackdropComponent={Backdrop}
         BackdropProps={{
-          timeout: 500
+          timeout: 500,
         }}
       >
         <Fade in={open}>
