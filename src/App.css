@@ -22,8 +22,28 @@
   font-size: 5vw;
 }
 
+#resume-comment {
+  display: flex;
+  font-weight: 400;
+  text-align: left;
+  display: inline;
+}
+
+#comment-slashes {
+  color: #ff7f50;
+  display: inline;
+}
+
+#comment-container {
+  margin-bottom: 3px;
+}
+
 @media only screen and (max-width: 600px) {
   #card-title {
+    text-align: center;
+  }
+
+  #resume-comment {
     text-align: center;
   }
 }

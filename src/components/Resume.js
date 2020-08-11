@@ -57,17 +57,16 @@ export default function Resume() {
     <div className={classes.root}>
       <Container maxWidth="lg">
         <Grid container spacing={1} className={classes.header}>
-          <Grid item xs={6}>
+          <Grid item sm={6} xs={12}>
             <Typography variant="h3" style={{ textAlign: "right" }}>
               Miranda Huet
             </Typography>
           </Grid>
-          <Grid item xs={6}>
-            <Typography
-              variant="h6"
-              style={{ display: "flex", fontWeight: "400" }}
-            >
-              <span style={{ color: "#ff7f50" }}>//</span>
+          <Grid item sm={6} xs={12} id="comment-container">
+            <Typography variant="h6" id="comment-slashes">
+              //
+            </Typography>
+            <Typography variant="h6" id="resume-comment">
               Product-minded software engineer, woodworker and adventurer.
             </Typography>
           </Grid>
