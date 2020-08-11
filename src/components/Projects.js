@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
   sectionContent: {
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(8, 0, 1),
+    padding: theme.spacing(4, 0, 1),
     alignContent: "center",
   },
 }));
@@ -31,7 +31,7 @@ export default function Projects() {
       <div className={classes.heroContent}>
         <PortfolioHeader />
       </div>
-      <div className={classes.sectionContent}>
+      <div className={classes.sectionContent} id="category-header">
         <Container maxWidth="sm">
           <Typography
             component="h2"
@@ -45,7 +45,7 @@ export default function Projects() {
           </Typography>
         </Container>
       </div>
-      <Container className={classes.cardGrid} maxWidth="md">
+      <Container id="card-grid" maxWidth="md">
         <Grid container spacing={4} alignItems="stretch">
           {devCards.map((card) => (
             <Grid xs={12} item={true} key={card.id} sm={6} md={4}>
@@ -54,7 +54,7 @@ export default function Projects() {
           ))}
         </Grid>
       </Container>
-      <div className={classes.sectionContent}>
+      <div className={classes.sectionContent} id="category-header">
         <Container maxWidth="sm">
           <Typography
             component="h2"
@@ -68,7 +68,7 @@ export default function Projects() {
           </Typography>
         </Container>
       </div>
-      <Container className={classes.cardGrid} maxWidth="md">
+      <Container id="card-grid" maxWidth="md">
         <Grid container spacing={4}>
           {oldDevCards.map((card) => (
             <Grid xs={12} item={true} key={card.id} sm={6} md={4}>
@@ -77,7 +77,7 @@ export default function Projects() {
           ))}
         </Grid>
       </Container>
-      <div className={classes.sectionContent}>
+      <div className={classes.sectionContent} id="category-header">
         <Container maxWidth="sm">
           <Typography
             component="h2"
@@ -91,7 +91,7 @@ export default function Projects() {
           </Typography>
         </Container>
       </div>
-      <Container className={classes.cardGrid} maxWidth="md">
+      <Container id="card-grid" maxWidth="md">
         <Grid container spacing={4}>
           {artCards.map((card) => (
             <Grid xs={12} item={true} key={card.id} sm={6} md={4}>

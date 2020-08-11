@@ -20,7 +20,21 @@
 }
 
 #h2-responsive {
-  font-size: 5vw;
+  font-size: 4vw;
+  color: white;
+}
+
+#category-header {
+  background-color: #ff7f50;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 48px;
+  z-index: 1;
+}
+
+#card-grid {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 #resume-comment {
@@ -79,13 +93,8 @@
 
 /* max width for scaling text, etc */
 @media only screen and (min-width: 1280px) {
-  /* #max-width {
-    max-width: 1280px;
-    margin: auto;
-  } */
-
   #header-content {
-    margin-top: 50vh;
+    margin-top: 400px;
   }
 
   #header-text {
@@ -97,6 +106,6 @@
   }
 
   #h2-responsive {
-    font-size: 4em;
+    font-size: 3em;
   }
 }
