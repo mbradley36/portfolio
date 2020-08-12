@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   sectionContent: {
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(4, 0, 1),
+    padding: theme.spacing(2, 0, 0.5),
     alignContent: "center",
   },
   card: {
