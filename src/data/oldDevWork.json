@@ -17,14 +17,14 @@
     "title": "Electroterrestrials",
     "description": "Game developer and artist for first mobile release from the Georgia Tech Game Studio.",
     "id": "8",
-    "image": "images/electro.png",
+    "image": "images/electro.jpg",
     "link": "https://www.behance.net/gallery/19674193/ElectroTerrestrials"
   },
   {
     "title": "Global Game Jam: KaliedoSoul",
     "description": "Competitive weekend Unity developent challenge with a small team.",
     "id": "9",
-    "image": "images/kaliedosoul.png",
+    "image": "images/kaliedosoul.jpg",
     "link": "https://www.behance.net/gallery/15317031/GGJ-KaleidoSoul"
   },
   {
@@ -38,7 +38,7 @@
     "title": "Lethe",
     "description": "Lead Developer on semester-long Unity project",
     "id": "11",
-    "image": "images/lethe.png",
+    "image": "images/lethe.jpg",
     "link": "https://www.behance.net/gallery/10452833/Lethe"
   }
 ]
