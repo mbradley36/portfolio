@@ -70,6 +70,11 @@
   color: black;
 }
 
+#resume-sub-category {
+  max-width: 700px;
+  margin: auto;
+}
+
 @media only screen and (max-width: 600px) {
   #card-title {
     text-align: center;

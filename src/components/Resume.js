@@ -93,7 +93,7 @@ export default function Resume() {
             </Typography>
           </Grid>
           <Grid item xs={12}>
-            <Typography>
+            <Typography id="resume-sub-category">
               <i>
                 <b>Game Development TA</b> for
                 {renderCompany("Georgia Institute of Technology")}(2014),
@@ -115,10 +115,11 @@ export default function Resume() {
             <Typography variant="h4">Technical Proficiencies</Typography>
           </Grid>
           <Grid item xs={12}>
-            <Typography>
+            <Typography id="resume-sub-category">
               Java {dot()} C# {dot()} Python {dot()} MySQL {dot()} React {dot()}{" "}
-              JavaScript {dot()} Angular {dot()} Natural Language Processing Git{" "}
-              {dot()} The Adobe Suite {dot()} Unity {dot()} Unreal {dot()}
+              NodeJS {dot()} JavaScript {dot()} Angular {dot()} Natural Language
+              Processing {dot()} Git {dot()} The Adobe Suite {dot()} Unity{" "}
+              {dot()} Unreal {dot()}
               Autodesk Maya {dot()} Side FX Houdini
             </Typography>
           </Grid>
