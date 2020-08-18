@@ -1,5 +1,5 @@
 #header-image {
-  background-image: url(./images/headerImage.gif);
+  background-image: url(./images/headerImage.png);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 45vw;
@@ -77,6 +77,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  #header-image {
+    background-image: url(./images/headerImage_mobile.png);
+  }
+
   #card-title {
     text-align: center;
   }
