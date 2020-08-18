@@ -64,6 +64,9 @@ export default function Resume() {
           </Grid>
           <Grid item sm={6} xs={12} id="comment-container">
             <Typography variant="h6" id="comment-slashes">
+              {
+                //eslint-disable-next-line
+              }
               //
             </Typography>
             <Typography variant="h6" id="resume-comment">

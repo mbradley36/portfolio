@@ -106,7 +106,7 @@ export default function ResumeStepper() {
                 index === activeStep ? classes.active : classes.inactive
               }
             >
-              <Grid item md={2} sm={0} />
+              <Grid item md={2} sm={12} />
               <Grid item sm={3} xs={12}>
                 <Typography>{position.title}</Typography>
                 <Typography variant="h6">
