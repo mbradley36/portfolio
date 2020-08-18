@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import PortfolioCard from "./PortfolioCard";
+// import PortfolioCard from "./PortfolioCard";
 import PortfolioHeader from "./PortfolioHeader";
 import Card from "@material-ui/core/Card";
 
@@ -30,6 +30,8 @@ const useStyles = makeStyles((theme) => ({
 const devCards = require("../data/devWork.json");
 const oldDevCards = require("../data/oldDevWork.json");
 const artCards = require("../data/animationAndArt.json");
+
+const PortfolioCard = React.lazy(() => import("./PortfolioCard"));
 
 export default function Projects() {
   const classes = useStyles();
@@ -64,7 +66,9 @@ export default function Projects() {
               sm={5}
               md={3}
             >
-              <PortfolioCard card={card} key={card.id} />
+              <Suspense fallback={<div>Loading...</div>}>
+                <PortfolioCard card={card} key={card.id} />
+              </Suspense>
             </Grid>
           ))}
         </Grid>
@@ -95,7 +99,9 @@ export default function Projects() {
               component={Card}
               className={classes.card}
             >
-              <PortfolioCard card={card} />
+              <Suspense fallback={<div>Loading...</div>}>
+                <PortfolioCard card={card} />
+              </Suspense>
             </Grid>
           ))}
         </Grid>
@@ -126,7 +132,9 @@ export default function Projects() {
               component={Card}
               className={classes.card}
             >
-              <PortfolioCard card={card} />
+              <Suspense fallback={<div>Loading...</div>}>
+                <PortfolioCard card={card} />
+              </Suspense>
             </Grid>
           ))}
         </Grid>
