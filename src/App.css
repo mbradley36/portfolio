@@ -55,6 +55,7 @@
 
 #comment-container {
   margin-bottom: 3px;
+  max-width: 500px;
 }
 
 #resume-name {

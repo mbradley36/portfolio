@@ -106,13 +106,14 @@ export default function ResumeStepper() {
                 index === activeStep ? classes.active : classes.inactive
               }
             >
-              <Grid item sm={6} xs={12}>
+              <Grid item md={2} sm={0} />
+              <Grid item sm={3} xs={12}>
                 <Typography>{position.title}</Typography>
                 <Typography variant="h6">
                   {renderCompany(position.company)}
                 </Typography>
               </Grid>
-              <Grid item sm={6} xs={12} key={index} id="resume-content">
+              <Grid item md={6} sm={8} xs={12} key={index} id="resume-content">
                 <InView
                   as="div"
                   threshold="0.75"
