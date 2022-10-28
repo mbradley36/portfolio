@@ -26,6 +26,7 @@ export default function PortfolioCard({ card }) {
           className={classes.cardMedia}
           image={card.image}
           title={card.title}
+          alt={`${card.title} image`}
         />
         <CardContent className={classes.cardContent}>
           <Typography gutterBottom variant="h5" component="h2" id="card-title">

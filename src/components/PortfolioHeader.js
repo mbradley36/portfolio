@@ -4,7 +4,12 @@ import Container from "@material-ui/core/Container";
 
 export default function PortfolioHeader() {
   return (
-    <div id="header-image">
+    <div
+      id="header-image"
+      alt={
+        "image of a desk with a keyboard, lamp, sticky notes, glasses, coffee mug and a cross stitch of cactuses"
+      }
+    >
       <div id="header-content">
         <Container>
           <Typography
