@@ -70,13 +70,12 @@ export default function Resume() {
               //
             </Typography>
             <Typography variant="h6" id="resume-comment">
-              Product-minded software engineer, woodworker and adventurer.
+              Product-Minded Software Engineer
             </Typography>
           </Grid>
           <Grid item xs={12}>
             <Typography>
-              Austin, Texas {dot()} mirandajbradley@gmail.com {dot()}{" "}
-              678-982-1748
+              Seattle, WA {dot()} mirandajbradley@gmail.com {dot()} 678-982-1748
             </Typography>
           </Grid>
           <Grid item xs={12}>
@@ -99,7 +98,9 @@ export default function Resume() {
           <Grid item xs={12}>
             <Typography id="resume-sub-category">
               <i>
-                <b>Game Development TA</b> for
+                <b>Quality Assurance Intern</b>
+                {renderCompany("Adult Swim Games, Turner")}(2015),
+                <b> Game Development TA</b> for
                 {renderCompany("Georgia Institute of Technology")}(2014),
                 <b> 3D Freelance Artist</b> for
                 {renderCompany("Interlaced Productions")}

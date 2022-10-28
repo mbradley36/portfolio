@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
+import { makeStyles, createStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import { InView } from "react-intersection-observer";
 import grey from "@material-ui/core/colors/grey";
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       width: "100%",
@@ -28,9 +28,18 @@ function getSteps() {
   return ["1", "2", "3", "4"];
 }
 
-function getStepContent(step: number) {
+function getStepContent(step) {
   switch (step) {
     case 0:
+      return [
+        {
+          title: "Senior Software Engineer",
+          company: "Flyhomes",
+          description:
+            "Responsible for developing and maintaining customer-facing site and internal tools (prior). Rebuilt internal Bookings front-end to improve code structure and UX, utilizing Typescript and Functional components while prioritizing test coverage. Lead Developer on rebuilding customer-facing tours experience. Drove conversion of testing to React Testing Library to encourage a user-focused testing strategy. Spearheaded collaboration with Design and Product teams to ensure product quality and capture shifting requirements in a dynamic environment. Launched and led the Volunteering ERG, organized a local volunteer day with Habitat for Humanity.",
+        },
+      ];
+    case 1:
       return [
         {
           title: "Lead Software Engineer",
@@ -39,7 +48,7 @@ function getStepContent(step: number) {
             "Responsible for developing and maintaining multiple applications, including an existing Django-based patient screener tool with dashboards for different user types. Designed and developed MERN storefront for clinics to order supplies needed for studies. Developed React-based static informational sites on studies. Collaborated with vendor Cloudnexa to deploy and manage applications on AWS.",
         },
       ];
-    case 1:
+    case 2:
       return [
         {
           title: "Senior Software Engineer",
@@ -48,31 +57,13 @@ function getStepContent(step: number) {
             "Past Positions as Software Engineer and Associate Applications Developer. Lead developer on internal vacation-scheduling chatbot. Responsible for NLP, database design and development, experience flow, testing, requirements definition, maintenance and handoff. Helped establish chatbot platform needs and collaborated with platform developers on issues. Resulting product provided 3M/yr savings in returned work time. Develop prototypes and support the research process through technical evaluations and data Investigations. Promote customer-centric mentality across various projects in partnership with User Experience Designers and User Researchers. Mentor developer new hires, volunteer mentor with Girls Who Code. Panelist in company-wide event discussing the intersection of design and AI. Drafted eight patents, currently in various stages of patent submission system. Spearheaded volunteer team for Keep Austin Fed.",
         },
       ];
-    case 2:
-      return [
-        {
-          title: "Game Developer",
-          company: "SideFX Software",
-          description:
-            "Conceptualized, coordinated and programmed demo highlighting Houdini core features within Unreal Game Engine. Acted as company representative at various convention demos.",
-        },
-      ];
     case 3:
       return [
         {
-          title: "Quality Assurance Intern",
-          company: "Adult Swim Games, Turner",
+          title: "Game Development Intern",
+          company: "SideFX Software",
           description:
-            "Spearheaded testing of unreleased games in development, including regression testing, bug report logging, and collaborating with developers to effectively identify bug sources.",
-        },
-      ];
-    case 4:
-      return [
-        {
-          title: "Generalist",
-          company: "Georgia Tech Game Studio",
-          description:
-            "Conceptualized, coordinated and programmed prototypes. Stepped in on artistic tasks as needed and served as an intermediary between art and development needs. Developer on the team’s first IOS and Android release.",
+            "Conceptualized, coordinated and programmed demo highlighting Houdini core features within Unreal Game Engine. Acted as company representative at various convention demos.",
         },
       ];
     default:
