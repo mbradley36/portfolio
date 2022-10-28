@@ -15,7 +15,7 @@ export default function PortfolioHeader() {
             gutterBottom
             id="header-text"
           >
-            Miranda Huet
+            Miranda Bradley
           </Typography>
           <Typography
             component="h4"

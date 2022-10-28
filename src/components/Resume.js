@@ -59,7 +59,7 @@ export default function Resume() {
         <Grid container spacing={1} className={classes.header}>
           <Grid item sm={6} xs={12}>
             <Typography variant="h3" id="resume-name">
-              Miranda Huet
+              Miranda Bradley
             </Typography>
           </Grid>
           <Grid item sm={6} xs={12} id="comment-container">
@@ -75,7 +75,8 @@ export default function Resume() {
           </Grid>
           <Grid item xs={12}>
             <Typography>
-              Austin, Texas {dot()} mirandajhuet@gmail.com {dot()} 678-982-1748
+              Austin, Texas {dot()} mirandajbradley@gmail.com {dot()}{" "}
+              678-982-1748
             </Typography>
           </Grid>
           <Grid item xs={12}>
