@@ -48,7 +48,7 @@ export default function PortfolioCard({ card }) {
       );
     } else {
       return (
-        <Link href={card.link} className={"card-link"} id={card.title}>
+        <Link href={card.link} class="card-link" id={card.title}>
           {cardContent}
         </Link>
       );
