@@ -1,5 +1,5 @@
-import "typeface-roboto";
 import React from "react";
+import "typeface-roboto";
 import PortfolioToolbar from "./PortfolioToolbar";
 import PortfolioFooter from "./PortfolioFooter";
 import Projects from "./Projects";

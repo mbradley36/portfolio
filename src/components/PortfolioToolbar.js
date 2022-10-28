@@ -1,6 +1,6 @@
+import React, { useEffect, useState } from "react";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
-import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link, useHistory } from "react-router-dom";
@@ -16,13 +16,20 @@ const useStyles = makeStyles((theme) => ({
 
 export default function PortfolioToolbar() {
   const classes = useStyles();
-  let history = useHistory();
+  let history = useHistory({ forceRefresh: true });
+  const [path, setPath] = useState(history.location.pathname);
+
+  React.useEffect(() => {
+    return history.listen((location) => {
+      setPath(location.pathname);
+    });
+  }, [history]);
 
   return (
     <React.Fragment>
       <AppBar position="fixed">
         <Tabs
-          value={history.location.pathname}
+          value={path}
           variant="fullWidth"
           classes={{ indicator: classes.indicator, root: classes.toolBar }}
           aria-label="tabs"

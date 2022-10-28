@@ -5,7 +5,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
-import CardModal from "./CardMoal";
+import CardModal from "./CardModal";
 
 const useStyles = makeStyles((theme) => ({
   cardMedia: {
@@ -48,7 +48,7 @@ export default function PortfolioCard({ card }) {
       );
     } else {
       return (
-        <Link href={card.link} class="card-link" id={card.title}>
+        <Link href={card.link} className={"card-link"} id={card.title}>
           {cardContent}
         </Link>
       );
