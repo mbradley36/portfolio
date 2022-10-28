@@ -6,7 +6,7 @@ export default function PortfolioHeader() {
   return (
     <div id="header-image">
       <div id="header-content">
-        <Container maxWidth="sm">
+        <Container>
           <Typography
             component="h1"
             variant="h1"

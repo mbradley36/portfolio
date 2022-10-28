@@ -1,7 +1,7 @@
 [
   {
     "title": "Move Food",
-    "description": "Current project. Lead developer on the migration of existing code base to React Native.",
+    "description": "Lead developer on the migration of existing code base to React Native.",
     "id": "12",
     "longDescription": "Move Food is a platform that connects excess food with distribution centers and food runners who can transport goods between the two. The ideally desired functionality requires access to user's camera and location, which is not (at the time of this writing) possible with a web app. We are working to migrate the code base to react native for this capability and to move forward with luanching and open sourcing the MVP.",
     "image": "images/moveFoodLogo.png",
