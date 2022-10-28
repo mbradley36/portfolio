@@ -40,6 +40,9 @@ const useStyles = makeStyles((theme: Theme) =>
     company: {
       color: "#882400",
     },
+    comment: {
+      textAlign: "left",
+    },
   })
 );
 
@@ -62,12 +65,18 @@ export default function Resume() {
               Miranda Bradley
             </Typography>
           </Grid>
-          <Grid item sm={6} xs={12} id="comment-container">
+          <Grid
+            item
+            sm={6}
+            xs={12}
+            id="comment-container"
+            className={classes.comment}
+          >
             <Typography variant="h6" id="comment-slashes">
               {
                 //eslint-disable-next-line
               }
-              //
+              //&nbsp;
             </Typography>
             <Typography variant="h6" id="resume-comment">
               Product-Minded Software Engineer
