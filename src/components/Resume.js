@@ -130,11 +130,12 @@ export default function Resume() {
           </Grid>
           <Grid item xs={12}>
             <Typography id="resume-sub-category">
-              Java {dot()} C# {dot()} Python {dot()} MySQL {dot()} React {dot()}{" "}
-              NodeJS {dot()} JavaScript {dot()} Angular {dot()} Natural Language
-              Processing {dot()} Git {dot()} The Adobe Suite {dot()} Unity{" "}
-              {dot()} Unreal {dot()}
-              Autodesk Maya {dot()} Side FX Houdini
+              JavaScript {dot()} React {dot()} React Testing Library {dot()}{" "}
+              Typescript {dot()}
+              Git {dot()} Python {dot()} MySQL {dot()} Angular {dot()} Django{" "}
+              {dot()} C# {dot()}
+              Java {dot()} Natural Language Processing {dot()} The Adobe Suite{" "}
+              {dot()}
             </Typography>
           </Grid>
         </Grid>
